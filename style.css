@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(45deg,#e48eba, #e9bbd3, #e48eba);
+}
+
+.boxes {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transition: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+.box1 {
+    border: 1em black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.box2 {
+    border: 1em black;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #5d2e46;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+a:hover::after{
+    width: 100%;
+
+}
